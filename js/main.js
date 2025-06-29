@@ -267,3 +267,28 @@ jQuery(document).ready(function($) {
   OnePageNavigation();
 
 });
+
+// Инициализация слайдера для блога
+$('.blog-slider').owlCarousel({
+    center: false,
+    items: 1,
+    loop: true,
+    stagePadding: 0,
+    margin: 20,
+    autoplay: false,
+    smartSpeed: 700,
+    nav: true,
+    dots: true,
+    navText: [
+        '<span class="icon-arrow_back"></span>',
+        '<span class="icon-arrow_forward"></span>'
+    ],
+    responsive: {
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+});
