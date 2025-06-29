@@ -1,29 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <title>Elit Photography&mdash; Onepage Website Template by Colorlib</title>
+    <title>Фотодень: Врачи - Настоящие Супергерои | Фотограф Евгений Ярист</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900|Oswald:400,700" rel="stylesheet">
     
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/fancybox.min.css">
-
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+      .hero-concept {
+        background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+        color: white;
+        padding: 3rem;
+        border-radius: 10px;
+        margin-bottom: 3rem;
+      }
+      
+      .comic-panel {
+        border: 3px solid #000;
+        padding: 1.5rem;
+        background: #fff;
+        box-shadow: 5px 5px 0 rgba(0,0,0,0.2);
+        margin-bottom: 2rem;
+        position: relative;
+      }
+      
+      .comic-panel:after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 30px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #fff transparent;
+      }
+      
+      .cost-table {
+        background: #f8f9fa;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      
+      .cost-table th {
+        background: #1a2a6c;
+        color: white;
+        font-weight: 600;
+      }
+      
+      .cost-table .total-row {
+        background: #e9ecef;
+        font-weight: bold;
+      }
+      
+      .superhero-accessories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+      
+      .accessory-card {
+        background: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .accessory-card:hover {
+        transform: translateY(-10px);
+      }
+      
+      .accessory-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #b21f1f;
+      }
+      
+      .marvel-inspiration {
+        border-left: 5px solid #b21f1f;
+        padding-left: 1.5rem;
+        margin: 2rem 0;
+      }
+      
+      .superhero-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin: 3rem 0;
+      }
+      
+      .superhero-img {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+      }
+      
+      .superhero-img:hover {
+        transform: scale(1.03);
+      }
+      
+      .superhero-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      .pricing-highlight {
+        background: linear-gradient(to right, #1a2a6c, #b21f1f);
+        color: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
   
@@ -41,229 +151,273 @@
 
   <header class="header-bar d-flex d-lg-block align-items-center site-navbar-target" data-aos="fade-right">
     <div class="site-logo">
-      <a href="index.html">Elit Photo</a>
+      <a href="index.html">Evgeniy Yarist</a>
     </div>
     
     <div class="d-inline-block d-lg-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
     <div class="main-menu">
       <ul class="js-clone-nav">
-        <li><a href="index.html#section-home" class="nav-link">Home</a></li>
-        <li><a href="index.html#section-photos" class="nav-link">Photos</a></li>
-        <li><a href="index.html#section-bio" class="nav-link">Biography</a></li>
-        <li class="active"><a href="index.html#section-blog" class="nav-link">Blog</a></li>
-        <li><a href="index.html#section-contact" class="nav-link">Contact</a></li>
+        <li><a href="index.html#section-home" class="nav-link">Наверх</a></li>
+        <li><a href="index.html#section-photos" class="nav-link">Галерея</a></li>
+        <li><a href="index.html#price" class="nav-link">Цены</a></li>
+        <li class="active"><a href="index.html#section-blog" class="nav-link">Идеи для фото</a></li>
+        <li><a href="index.html#section-contact" class="nav-link">Контакты</a></li>
       </ul>
       <ul class="social js-clone-nav">
-        <li><a href="#"><span class="icon-facebook"></span></a></li>
-        <li><a href="#"><span class="icon-twitter"></span></a></li>
-        <li><a href="#"><span class="icon-instagram"></span></a></li>
+        <li><a href="https://vk.com/evgeniy_yarist" target="_blank"><span class="icon-vk"></span></a></li>
+        <li><a href="https://wa.me/79242773229?text=Добрый%20день,%20можно%20заказать%20фотосессию?" target="_blank"><span class="icon-whatsapp"></span></a></li>
+        <li><a href="https://t.me/evgeniy_yarist" target="_blank"><span class="icon-telegram"></span></a></li>
+        <li><a href="https://www.instagram.com/evgeniy.yarist?igsh=NWk2OWZxMWxmMHZw&utm_source=qr" target="_blank"><span class="icon-instagram"></span></a></li>
       </ul>
     </div>
   </header> 
+  
   <main class="main-content">
     
-    <section class="site-section-hero bg-image" style="background-image: url('images/img_9.jpg');"  data-stellar-background-ratio="0.5" id="section-home">
+    <section class="site-section-hero bg-image" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/photoday/Leonardo_Phoenix_10_Create_a_dynamic_digital_illustration_of_a_0.jpg');" data-stellar-background-ratio="0.5" id="section-home">
         <div class="row justify-content-center align-items-center">
-          <div class="col-md-7 text-center">
-            <h1 class="text-white heading text-uppercase" data-aos="fade-up">Lorem ipsum dolor sit amet elit tempore</h1>
+          <div class="col-md-8 text-center">
+            <h1 class="text-white heading text-uppercase" data-aos="fade-up">Фотодень: Врачи - Настоящие Супергерои</h1>
             <p class="lead text-white mb-5" data-aos="fade-up" data-aos-delay="100">
-              October 18, 2019 &bullet; <em>by</em> Jed Smith
+              Ваш шанс стать частью медицинской вселенной Marvel
             </p>
           </div>
         </div>
       </section>
 
-
     
     <div class="container-fluid">
-        
-      
-
-
       <div class="site-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 blog-content pr-lg-5">
-            <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-
-            <blockquote><p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p></blockquote>
-
-            <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-
-            <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-
-            <blockquote><p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p></blockquote>
-
-            <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-            
-            <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-
-
-            <div class="pt-5">
-              <p>Categories:  <a href="#">Design</a>, <a href="#">Events</a>  Tags: <a href="#">#html</a>, <a href="#">#trends</a></p>
-            </div>
-
-
-            <div class="pt-5">
-              <h3 class="mb-5">6 Comments</h3>
-              <ul class="comment-list">
-                <li class="comment">
-                  <div class="vcard bio">
-                    <img src="images/person_2.jpg" alt="Image">
-                  </div>
-                  <div class="comment-body">
-                    <h3>Jacob Smith</h3>
-                    <div class="meta">January 9, 2018 at 2:21pm</div>
-                    <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-                    <p><a href="#" class="reply">Reply</a></p>
-                  </div>
-                </li>
-
-                <li class="comment">
-                  <div class="vcard bio">
-                    <img src="images/person_3.jpg" alt="Image">
-                  </div>
-                  <div class="comment-body">
-                    <h3>Chris Meyer</h3>
-                    <div class="meta">January 9, 2018 at 2:21pm</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                    <p><a href="#" class="reply">Reply</a></p>
-                  </div>
-
-                  <ul class="children">
-                    <li class="comment">
-                      <div class="vcard bio">
-                        <img src="images/person_5.jpg" alt="Image">
-                      </div>
-                      <div class="comment-body">
-                        <h3>Chintan Patel</h3>
-                        <div class="meta">January 9, 2018 at 2:21pm</div>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                        <p><a href="#" class="reply">Reply</a></p>
-                      </div>
-
-
-                      <ul class="children">
-                        <li class="comment">
-                          <div class="vcard bio">
-                            <img src="images/person_1.jpg" alt="Image">
-                          </div>
-                          <div class="comment-body">
-                            <h3>Jean Doe</h3>
-                            <div class="meta">January 9, 2018 at 2:21pm</div>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                            <p><a href="#" class="reply">Reply</a></p>
-                          </div>
-
-                            <ul class="children">
-                              <li class="comment">
-                                <div class="vcard bio">
-                                  <img src="images/person_4.jpg" alt="Image">
-                                </div>
-                                <div class="comment-body">
-                                  <h3>Ben Afflick</h3>
-                                  <div class="meta">January 9, 2018 at 2:21pm</div>
-                                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                                  <p><a href="#" class="reply">Reply</a></p>
-                                </div>
-                              </li>
-                            </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="comment">
-                  <div class="vcard bio">
-                    <img src="images/person_1.jpg" alt="Image">
-                  </div>
-                  <div class="comment-body">
-                    <h3>Jean Doe</h3>
-                    <div class="meta">January 9, 2018 at 2:21pm</div>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                    <p><a href="#" class="reply">Reply</a></p>
-                  </div>
-                </li>
-              </ul>
-              <!-- END comment-list -->
-              
-              <div class="comment-form-wrap pt-5">
-                <h3 class="mb-5">Leave a comment</h3>
-                <form action="#" class="">
-                  <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" class="form-control" id="name">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" class="form-control" id="email">
-                  </div>
-                  <div class="form-group">
-                    <label for="website">Website</label>
-                    <input type="url" class="form-control" id="website">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <input type="submit" value="Post Comment" class="btn btn-primary btn-md text-white">
-                  </div>
-
-                </form>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-4 sidebar">
-            <div class="sidebar-box">
-              <form action="#" class="search-form">
-                <div class="form-group">
-                  <span class="icon fa fa-search"></span>
-                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="hero-concept">
+                <h2 class="text-center mb-4">Концепция Фотодня</h2>
+                <p class="lead text-center">Вдохновленный вселенной Marvel, этот фотодень посвящен тому, чтобы показать врачей как настоящих супергероев нашего времени. Так же, как персонажи Marvel объединены в кинематографическую вселенную, врачи составляют настоящую вселенную героев, спасающих жизни каждый день.</p>
+                
+                <div class="marvel-inspiration">
+                  <p>"Врачи - это настоящие супергерои без плащей. Их оружие - знания, их сила - опыт, их миссия - спасать жизни."</p>
                 </div>
-              </form>
-            </div>
-            <div class="sidebar-box">
-              <div class="categories">
-                <h3>Categories</h3>
-                <li><a href="#">Creatives <span>(12)</span></a></li>
-                <li><a href="#">News <span>(22)</span></a></li>
-                <li><a href="#">Design <span>(37)</span></a></li>
-                <li><a href="#">HTML <span>(42)</span></a></li>
-                <li><a href="#">Web Development <span>(14)</span></a></li>
               </div>
-            </div>
-            <div class="sidebar-box">
-              <img src="images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle">
-              <h3 class="text-white">About The Author</h3>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-              <p><a href="#" class="btn btn-primary btn-md text-white">Read More</a></p>
-            </div>
-
-            <div class="sidebar-box">
-              <h3 class="text-white">Paragraph</h3>
-              <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+              
+              <div class="comic-panel">
+                <h3 class="mb-4">Почему именно супергеройская тема?</h3>
+                <p>Медицинские работники каждый день сталкиваются с вызовами, требующими нечеловеческой выносливости, решимости и навыков. Этот фотодень - возможность визуализировать эти качества, создав эпичные образы, достойные комиксов Marvel.</p>
+                <p>С помощью профессиональной фотосъемки, специальных эффектов и тщательно подобранных аксессуаров мы создадим образы, которые подчеркнут вашу героическую сущность как медицинского профессионала.</p>
+              </div>
+              
+              <div class="superhero-gallery">
+                <div class="superhero-img">
+                  <img src="images/photoday/Leonardo_Phoenix_10_Create_a_dynamic_digital_illustration_of_a_0.jpg" alt="Врач-супергерой с тактическим ремнем">
+                </div>
+                <div class="superhero-img">
+                  <img src="images/photoday/Leonardo_Phoenix_10_Create_a_dynamic_digital_illustration_of_a_1.jpg" alt="Медицинский супергерой в экшн-позе">
+                </div>
+                <div class="superhero-img">
+                  <img src="images/photoday/Leonardo_Phoenix_10_Create_a_dynamic_digital_illustration_of_a_2.jpg" alt="Героический образ врача с футуристическими аксессуарами">
+                </div>
+                <div class="superhero-img">
+                  <img src="images/photoday/Leonardo_Phoenix_10_Create_a_dynamic_digital_illustration_of_a_3.jpg" alt="Эпичный портрет врача-супергероя">
+                </div>
+              </div>
+              
+              <h2 class="mt-5 mb-4">Аксессуары для создания образа</h2>
+              <p>Чтобы создать убедительный образ врача-супергероя, мы будем использовать специально подобранные аксессуары:</p>
+              
+              <div class="superhero-accessories">
+                <div class="accessory-card">
+                  <div class="accessory-icon">🕶️</div>
+                  <h4>Стильные очки</h4>
+                  <p>Футуристические модели, создающие таинственный образ</p>
+                </div>
+                
+                <div class="accessory-card">
+                  <div class="accessory-icon">🎭</div>
+                  <h4>Маски на глаза</h4>
+                  <p>Элемент таинственности как у супергероев комиксов</p>
+                </div>
+                
+                <div class="accessory-card">
+                  <div class="accessory-icon">🔧</div>
+                  <h4>Тактические ремни</h4>
+                  <p>Для размещения "медицинского оружия" - инструментов</p>
+                </div>
+                
+                <div class="accessory-card">
+                  <div class="accessory-icon">💼</div>
+                  <h4>Футуристичные сумки</h4>
+                  <p>Специально разработанные под проект</p>
+                </div>
+              </div>
+              
+              <h2 class="mt-5 mb-4">План организации Фотодня</h2>
+              
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="bg-light p-4 rounded mb-4">
+                    <h4 class="mb-3">1. Подготовительный этап (7 дней)</h4>
+                    <ul>
+                      <li>Консультация с участниками, обсуждение образов</li>
+                      <li>Подбор и заказ аксессуаров</li>
+                      <li>Разработка концепции для каждого участника</li>
+                      <li>Подготовка локации и оборудования</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <div class="bg-light p-4 rounded mb-4">
+                    <h4 class="mb-3">2. День съемки</h4>
+                    <ul>
+                      <li>10:00-11:00 - Прибытие, подготовка</li>
+                      <li>11:00-13:00 - Индивидуальные съемки (1-й блок)</li>
+                      <li>13:00-14:00 - Перерыв</li>
+                      <li>14:00-16:00 - Индивидуальные съемки (2-й блок)</li>
+                      <li>16:00-17:00 - Групповые и командные фото</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <div class="bg-light p-4 rounded mb-4">
+                    <h4 class="mb-3">3. Постпродакшн (10 дней)</h4>
+                    <ul>
+                      <li>Отбор лучших кадров</li>
+                      <li>Профессиональная ретушь</li>
+                      <li>Добавление эффектов в стиле комиксов</li>
+                      <li>Подготовка финальных файлов</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <div class="bg-light p-4 rounded mb-4">
+                    <h4 class="mb-3">4. Презентация результатов</h4>
+                    <ul>
+                      <li>Онлайн-галерея для участников</li>
+                      <li>Физические копии в стильном оформлении</li>
+                      <li>Готовые материалы для соцсетей</li>
+                      <li>Коллективное открытие выставки</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <h2 class="mt-5 mb-4">Финансовый расчет</h2>
+              
+              <div class="cost-table mb-5">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Статья расходов</th>
+                      <th>Стоимость (₽)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="2" class="text-center font-weight-bold">Оборудование</td>
+                    </tr>
+                    <tr>
+                      <td>Камера Sony a6000</td>
+                      <td>25 000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Объектив Sigma 30mm f1.4 DC DN C Sony E</td>
+                      <td>16 000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Объектив Sigma AF 16mm f/1.4 DC DN C Sony E</td>
+                      <td>29 000,00</td>
+                    </tr>
+                    <tr>
+                      <td>Компьютер Honor MagicBook 14</td>
+                      <td>15 000,00</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="text-center font-weight-bold">Обучение</td>
+                    </tr>
+                    <tr>
+                      <td>Фотошкола факультет</td>
+                      <td>120 000,00</td>
+                    </tr>
+                    <tr>
+                      <td class="total-row">Итого инвестиции</td>
+                      <td class="total-row">205 000,00</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="text-center font-weight-bold">Амортизация (30 месяцев)</td>
+                    </tr>
+                    <tr>
+                      <td>Ежемесячная амортизация</td>
+                      <td>6 833,33</td>
+                    </tr>
+                    <tr>
+                      <td>На одну съемку (10 в месяц)</td>
+                      <td>683,33</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="text-center font-weight-bold">Текущие расходы на съемку</td>
+                    </tr>
+                    <tr>
+                      <td>Транспортные расходы</td>
+                      <td>80,00</td>
+                    </tr>
+                    <tr>
+                      <td>Ремень</td>
+                      <td>350,00</td>
+                    </tr>
+                    <tr>
+                      <td>Сумки на заказ</td>
+                      <td>3 000,00</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="text-center font-weight-bold">Затраты времени</td>
+                    </tr>
+                    <tr>
+                      <td>Время на клиента (часов)</td>
+                      <td>13,5</td>
+                    </tr>
+                    <tr>
+                      <td>Стоимость рабочего часа</td>
+                      <td>427,00</td>
+                    </tr>
+                    <tr class="total-row">
+                      <td class="font-weight-bold">Стоимость 30 минут съемки</td>
+                      <td class="font-weight-bold">4 817,50</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="pricing-highlight">
+                Специальная цена на Фотодень: 12 500 ₽ за участие
+              </div>
+              
+              <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                  <div class="bg-light p-5 rounded">
+                    <h3 class="mb-4">Готовы стать супергероем?</h3>
+                    <p class="mb-4">Запишитесь на уникальный Фотодень и получите образы, достойные комиксов Marvel!</p>
+                    <a href="index.html#section-contact" class="btn btn-primary btn-lg">Записаться на Фотодень</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-5 pt-5 border-top text-center">
+                <a href="index.html#section-blog" class="btn btn-outline-primary">&larr; Вернуться к идеям для фото</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    
+      
 
       <div class="row justify-content-center">
         <div class="col-md-12 text-center py-5">
           <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Фотограф Евгений Ярист | Все права защищены
+          </p>
         </div>
       </div>
     </div>
@@ -283,10 +437,7 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/aos.js"></script>
-  
-
   <script src="js/jquery.fancybox.min.js"></script>
-
   <script src="js/main.js"></script>
     
   </body>
